@@ -369,6 +369,6 @@ def get_host_info():
 
 
 if __name__ == "__main__":
-    print util.json_dumps(get_host_info())
+    print(util.json_dumps(get_host_info()))
 
 # vi: ts=4 expandtab
