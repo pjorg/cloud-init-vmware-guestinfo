@@ -2,6 +2,13 @@
 This project provides a cloud-init datasource for pulling meta,
 user, and vendor data from VMware vSphere's GuestInfo [interface](https://github.com/vmware/govmomi/blob/master/govc/USAGE.md#vmchange).
 
+## Fork for EL8
+This repo contains a version of the provider that can easily be packaged for EL8. It is a lot behind the master branch since
+master introduced python dependencies which are not available on EL7/8, so this is based (at least close to) on the commit that
+the provided EL7 RPM was produced from as that is known to work for all my intents and purposes
+
+See https://github.com/vmware/cloud-init-vmware-guestinfo for the original/upstream
+
 ## Installation
 There are multiple methods of installing the data source.
 
